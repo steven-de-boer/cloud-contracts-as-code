@@ -26,7 +26,7 @@ A additional CloudBot alert and notification policy gets configured with the spe
 
 ## Usage
 
-Clone the repository and create a terraform.tfvars file within the root folder with contents like these (use your details):
+- Clone the repository and create a terraform.tfvars file within the root folder with contents like these (use your details):
 
 ```
 ### General settings
@@ -50,6 +50,17 @@ use_gcp = true
 gcp_cloud_account_id = ""
 gcp_project_id = ""
 ``` 
+
+- From a command line initialize the Terraform configuration directory:
+
+  terraform init
+- Create an execution plan:
+
+  terraform plan
+- Create or modify the deployment:
+
+  terraform apply
+
 ## References
 * [CloudGuard Dome9 GSL Language](https://sc1.checkpoint.com/documents/CloudGuard_Dome9/Documentation/PostureManagement/GSL.html?tocpath=Posture%20Management%7CThe%20CloudGuard%20Dome9%20GSL%20Language%7C_____0)
 * [CloudGuard Dome9 Alerts and Notifications](https://sc1.checkpoint.com/documents/CloudGuard_Dome9/Documentation/Alerts-Notifications/Alerts-and-Notification.html)
